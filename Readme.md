@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [:dancer: Ольга Коваль](https://htmlacademy.ru/profile/zateya).
-* Наставник: [:woman: Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Студент: [Ольга Коваль](https://htmlacademy.ru/profile/zateya).
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
