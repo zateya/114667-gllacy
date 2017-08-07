@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Ольга Коваль](https://up.htmlacademy.ru/htmlcss/18/user/114667).
-* Наставник: `Неизвестно`.
+* Студент: [:dancer: Ольга Коваль](https://htmlacademy.ru/profile/zateya).
+* Наставник: [:woman: Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
