@@ -4,9 +4,86 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body class="page">
+    <div class="page-wrapper">
+      <header class="page-header">
+        <div class="page-header__layout  container">
+          <a class="page-header__logo">
+            <img src="http://placehold.it/154x64" alt="Магазин Глейси" width="154" height="64">
+          </a>
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="catalog.html">Каталог</a>
+                <ul class="main-nav__submenu">
+                  <li class="main-nav__submenu-item  main-nav__submenu-item--title">
+                    <a class="main-nav__submenu-link" href="#">Новинки</a>
+                  </li>
+                  <li class="main-nav__submenu-item">
+                    <a class="main-nav__submenu-link" href="#">Сливочное</a>
+                  </li>
+                  <li class="main-nav__submenu-item">
+                    <a class="main-nav__submenu-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="main-nav__submenu-item">
+                    <a class="main-nav__submenu-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="main-nav__submenu-item">
+                    <a class="main-nav__submenu-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__item-link" href="#">О Компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <div class="user-nav__search">
+              <a class="user-nav__search-link">Поиск</a>
+              <form class="site-search" method="get" action="submit" id="site-search">
+                <label class="site-search__label" for="search-text">Что ищем?</label>
+                <input class="site-search__input" type="text" id="search-text" name="search-text" placeholder="Что ищем?">
+              </form>
+            </div>
+            <div class="user-nav__enter">
+              <a class="user-nav__enter-link" href="#">Вход</a>
+              <form class="site-enter" method="post" action="submit" id="site-enter">
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page-main">
+        <div class="page-main__layout  container">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+        </div>
+        <section class="map" id="map">
+          <h2 class="sr-only">Схема проезда</h2>
+          <div class="map__layout  container">
+            <section class="map__contacts">
+              <h3 class="map__address-title">Адрес главного офиса и офлайн магазина:</h3>
+              <address class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+              <h3 class="map__phone-title">Для заказов по телефону:</h3>
+              <p class="map__phone-info">
+                <a class="map__phone" href="tel:+78124502525">8 812 450-25-25</a>
+                <span class="map__call-time">(с 10 до 20 ежедневно)</span>
+              </p>
+              <a class="map__feedback-btn  btn" id="map-feedback-btn" href="#">Форма обратной связи</a>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+
+
+
+      </footer>
+    </div>
 
   </body>
 </html>
