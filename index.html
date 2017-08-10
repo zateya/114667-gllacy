@@ -41,19 +41,70 @@
               </li>
             </ul>
           </nav>
-          <div class="user-nav">
-            <div class="user-nav__search">
-              <a class="user-nav__search-link">Поиск</a>
+          <ul class="user">
+            <li class="user__item">
+              <a class="user-search-link" href="#">Поиск</a>
               <form class="site-search" method="get" action="submit" id="site-search">
                 <label class="site-search__label" for="search-text">Что ищем?</label>
                 <input class="site-search__input" type="text" id="search-text" name="search-text" placeholder="Что ищем?">
               </form>
-            </div>
-            <div class="user-nav__enter">
-              <a class="user-nav__enter-link" href="#">Вход</a>
+            </li>
+            <li class="user__item">
+              <a class="user-enter-link" href="#">Вход</a>
               <form class="site-enter" method="post" action="submit" id="site-enter">
+                <div class="site-enter__row">
+                  <label class="site-enter__label" for="email">Электронная почта</label>
+                  <input class="site-enter__input" type="text" id="email" name="email" placeholder="Электронная почта">
+                </div>
+                <div class="site-enter__row">
+                  <label class="site-enter__label" for="password">Пароль</label>
+                  <input class="site-enter__input" type="password" id="password" name="password" placeholder="Пароль">
+                </div>
+                <footer class="site-enter__footer">
+                  <button class="site-enter__submit  btn" type="submit" name="enter">Войти</button>
+                  <div class="site-enter__links">
+                    <a class="site-enter__link" href="#">Забыли пароль?</a>
+                    <a class="site-enter__link" href="#">Новая регистрация</a>
+                  </div>
+                </footer>
               </form>
-            </div>
+            </li>
+            <li class="user__item">
+              <a class="user-basket-link" href="#">
+                <span class="user-basket-link__empty">Пусто</span>
+                <span class="user-basket-link__goods">
+                  <span class="user-basket-link__goods-count">2</span> товара
+                </span>
+              </a>
+              <div class="basket-popup">
+                <table class="basket-table">
+                  <tr>
+                    <td>
+                      <button class="basket-remove-good" type="button" name="remove-good">Убрать из корзины</button>
+                      <img src="" alt="">
+                      Пломбир с апельсиновым джемом
+                    </td>
+                    <td>1,5 кг х 200 руб.</td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="basket-remove-good" type="button" name="remove-good">Убрать из корзины</button>
+                      <img src="" alt="">
+                      Клубничный пломбир с присыпкой из белого шоколада
+                    </td>
+                    <td>1,5 кг х 300 руб.</td>
+                    <td>450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3">
+                      Итого: 750 руб.
+                    </td>
+                  </tr>
+                </table>
+                <a class="basket-popup__order  btn" href="#">Оформить заказ</a>
+              </div>
+            </li>
           </div>
         </div>
       </header>
