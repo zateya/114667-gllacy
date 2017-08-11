@@ -167,8 +167,7 @@
             <h2 class="sr-only">Хиты продаж</h2>
             <section class="products">
               <article class="product">
-                <div class="product__info">
-                  <span class="product__flag">Хит!</span>
+                <div class="product__info  product__info--flag">
                   <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                   <div class="product__img-block">
                     <img class="product__img" src="http://placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -178,8 +177,7 @@
                 <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
-                <div class="product__info">
-                  <span class="product__flag">Хит!</span>
+                <div class="product__info  product__info--flag">
                   <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
                   <div class="product__img-block">
                     <img class="product__img" src="http://placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
@@ -189,8 +187,7 @@
                 <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
-                <div class="product__info">
-                  <span class="product__flag">Хит!</span>
+                <div class="product__info  product__info--flag">
                   <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                   <div class="product__img-block">
                     <img class="product__img" src="http://placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
@@ -200,8 +197,7 @@
                 <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
-                <div class="product__info">
-                  <span class="product__flag">Хит!</span>
+                <div class="product__info  product__info--flag">
                   <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
                   <div class="product__img-block">
                     <img class="product__img" src="http://placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
@@ -237,7 +233,8 @@
                   <h3 class="news-post__title">10 способов сервировки фруктовых щербетов к столу</h3>
                 </a>
               </article>
-              <div class="newsletter">
+              <section class="newsletter">
+                <h2 class="sr-only">Подписка на рассылку</h2>
                 <p class="newsletter__lead">
                   Подпишитесь на нашу сладкую рассылку
                   и будете всегда в курсе всего самого вкусного,
@@ -255,7 +252,7 @@
                     </div>
                   </div>
                 </form>
-              </div>
+              </section>
             </div>
           </section>
         </div>
@@ -274,34 +271,40 @@
         </section>
       </main>
       <footer class="page-footer">
-        <ul class="social-links">
-          <li class="social-links__item">
-            <a class="social-link  social-link--tw" href="#">Twitter</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-link  social-link--inst" href="#">Instagram</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-link  social-link--fb" href="#">Facebook</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-link  social-link--vk" href="#">vKontakte</a>
-          </li>
-        </ul>
-        <ul class="extra-nav">
-          <li class="extra-nav__item">
-            <a class="extra-nav__item-link  extra-nav__item-link--like" href="#">Для поставщиков</a>
-          </li>
-          <li class="extra-nav__item">
-            <a class="extra-nav__item-link" href="#">Наши документы</a>
-          </li>
-          <li class="extra-nav__item">
-            <a class="extra-nav__item-link" href="#">О производстве</a>
-          </li>
-          <li class="extra-nav__item">
-            <a class="extra-nav__item-link" href="#">Экологические стандарты</a>
-          </li>
-        </ul>
+        <div class="page-footer__social">
+          <h2 class="sr-only">Мы в соцсетях</h2>
+          <ul class="social-links">
+            <li class="social-links__item">
+              <a class="social-link  social-link--tw" href="#">Twitter</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-link  social-link--inst" href="#">Instagram</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-link  social-link--fb" href="#">Facebook</a>
+            </li>
+            <li class="social-links__item">
+              <a class="social-link  social-link--vk" href="#">vKontakte</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__extra-nav">
+          <h2 class="sr-only">Дополнительная информация</h2>
+          <ul class="extra-nav">
+            <li class="extra-nav__item  extra-nav__item--like">
+              <a class="extra-nav__item-link" href="#">Для поставщиков</a>
+            </li>
+            <li class="extra-nav__item">
+              <a class="extra-nav__item-link" href="#">Наши документы</a>
+            </li>
+            <li class="extra-nav__item">
+              <a class="extra-nav__item-link" href="#">О производстве</a>
+            </li>
+            <li class="extra-nav__item">
+              <a class="extra-nav__item-link" href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </div>
         <div class="developer">
           <a class="developer__logo-link" href="#">
             <img class="developer__logo" src="http://placehold.it/108x39" alt="HTML Academy">
