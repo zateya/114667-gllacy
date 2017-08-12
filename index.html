@@ -5,6 +5,7 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="page">
+    <div class="page-overlay"></div>
     <input class="page-bg  page-bg--1" id="page-bg-1" name="bg-input" type="radio" checked>
     <input class="page-bg  page-bg--2" id="page-bg-2" name="bg-input" type="radio">
     <input class="page-bg  page-bg--3" id="page-bg-3" name="bg-input" type="radio">
@@ -244,7 +245,6 @@
             </ul>
           </section>
           <section class="news">
-            <h2 class="sr-only">Будьте в курсе событий</h2>
             <div class="news__layout">
               <article class="news-post">
                 <h2 class="news-post__rubric">Новое в нашем блоге</h2>
@@ -266,8 +266,8 @@
                       <label class="subscription__label" for="subscription-email">Электронная почта</label>
                       <input class="subscription__input" name="email" id="subscription-email" type="text">
                     </div>
-                    <div class="subscription__btn-field">
-                      <button class="subscription__btn  btn" type="button">Отправить</button>
+                    <div class="subscription__submit-wrap">
+                      <button class="subscription__btn  btn" type="submit">Отправить</button>
                     </div>
                   </div>
                 </form>
@@ -331,6 +331,27 @@
           <p class="developer__copyright">Сделано в <a class="developer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
         </div>
       </footer>
+    </div>
+    <div class="popup" id="feedback-popup">
+      <button class="popup__close" type="button" name="button">Закрыть</button>
+      <div class="popup__title">Мы обязательно вам ответим!</div>
+      <form class="feedback" action="submit" method="post">
+        <div class="feedback__row">
+          <label class="feedback__label" for="feedback-name">Как вас зовут?</label>
+          <input class="feedback__input" type="text" id="feedback-name" name="name">
+        </div>
+        <div class="feedback__row">
+          <label class="feedback__label" for="feedback-email">Ваша почта для ответа?</label>
+          <input class="feedback__input" type="email" id="feedback-email" name="email">
+        </div>
+        <div class="feedback__row">
+          <label class="feedback__label" for="feedback-message">Напишите что-нибудь...</label>
+          <textarea class="feedback__textarea" id="feedback-message" name="message"></textarea>
+        </div>
+        <div class="feedback__submit-row">
+          <button class="feedback__submit  btn" type="submit" name="feedback-submit">Отправить</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
