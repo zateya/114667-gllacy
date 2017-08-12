@@ -5,6 +5,9 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="page">
+    <input class="page-bg  page-bg--1" id="page-bg-1" name="bg-input" type="radio" checked>
+    <input class="page-bg  page-bg--2" id="page-bg-2" name="bg-input" type="radio">
+    <input class="page-bg  page-bg--3" id="page-bg-3" name="bg-input" type="radio">
     <div class="page-wrapper">
       <header class="page-header">
         <div class="page-header__layout  container">
@@ -12,15 +15,15 @@
             <img src="http://placehold.it/154x64" alt="Магазин Глейси" width="154" height="64">
           </a>
           <nav class="main-nav">
-            <ul class="main-nav__list">
+            <ul class="main-nav__menu">
               <li class="main-nav__item">
-                <a class="main-nav__item-link" href="catalog.html">Каталог</a>
+                <a class="main-nav__item-link" href="#">Каталог</a>
                 <ul class="main-nav__submenu">
                   <li class="main-nav__submenu-item  main-nav__submenu-item--title">
-                    <a class="main-nav__submenu-link" href="#">Новинки</a>
+                    Новинки
                   </li>
                   <li class="main-nav__submenu-item">
-                    <a class="main-nav__submenu-link" href="#">Сливочное</a>
+                    <a class="main-nav__submenu-link" href="catalog.html">Сливочное</a>
                   </li>
                   <li class="main-nav__submenu-item">
                     <a class="main-nav__submenu-link" href="#">Щербеты</a>
@@ -46,7 +49,7 @@
               <a class="user-search-link" href="#">Поиск</a>
               <form class="site-search" method="get" action="submit" id="site-search">
                 <label class="site-search__label" for="search-text">Что ищем?</label>
-                <input class="site-search__input" type="text" id="search-text" name="search-text" placeholder="Что ищем?">
+                <input class="site-search__input" type="text" id="search-text" name="search-text">
               </form>
             </li>
             <li class="user-nav__item">
@@ -54,11 +57,11 @@
               <form class="site-enter" method="post" action="submit" id="site-enter">
                 <div class="site-enter__row">
                   <label class="site-enter__label" for="user-email">Электронная почта</label>
-                  <input class="site-enter__input" type="text" id="user-email" name="email" placeholder="Электронная почта">
+                  <input class="site-enter__input" type="text" id="user-email" name="email">
                 </div>
                 <div class="site-enter__row">
                   <label class="site-enter__label" for="password">Пароль</label>
-                  <input class="site-enter__input" type="password" id="password" name="password" placeholder="Пароль">
+                  <input class="site-enter__input" type="password" id="password" name="password">
                 </div>
                 <footer class="site-enter__footer">
                   <button class="site-enter__submit  btn" type="submit" name="enter">Войти</button>
@@ -139,6 +142,11 @@
                 </div>
               </li>
             </ul>
+            <div class="showcase__controls">
+              <label class="showcase__control  showcase__control--1" for="page-bg-1"></label>
+              <label class="showcase__control  showcase__control--2" for="page-bg-2"></label>
+              <label class="showcase__control  showcase__control--3" for="page-bg-3"></label>
+            </div>
           </section>
           <section class="promotions">
             <h2 class="sr-only">Действующие акции</h2>
@@ -167,48 +175,56 @@
             <h2 class="sr-only">Хиты продаж</h2>
             <section class="products">
               <article class="product">
-                <div class="product__info">
+                <div class="product__inner">
                   <span class="product__flag">Хит!</span>
-                  <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                  <div class="product__img-block">
-                    <img class="product__img" src="http://placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-                    <span class="product__price">310&#8381;<span class="product__weight">/кг</span></span>
+                  <div class="product__info">
+                    <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                    <div class="product__img-block">
+                      <img class="product__img" src="http://placehold.it/267x267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+                      <span class="product__price">310&#8381;<span class="product__weight">/кг</span></span>
+                    </div>
                   </div>
+                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                 </div>
-                <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
-                <div class="product__info">
+                <div class="product__inner">
                   <span class="product__flag">Хит!</span>
-                  <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
-                  <div class="product__img-block">
-                    <img class="product__img" src="http://placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-                    <span class="product__price">380&#8381;<span class="product__weight">/кг</span></span>
+                  <div class="product__info">
+                    <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
+                    <div class="product__img-block">
+                      <img class="product__img" src="http://placehold.it/267x267" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+                      <span class="product__price">380&#8381;<span class="product__weight">/кг</span></span>
+                    </div>
                   </div>
+                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                 </div>
-                <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
-                <div class="product__info">
+                <div class="product__inner">
                   <span class="product__flag">Хит!</span>
-                  <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                  <div class="product__img-block">
-                    <img class="product__img" src="http://placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-                    <span class="product__price">355&#8381;<span class="product__weight">/кг</span></span>
+                  <div class="product__info">
+                    <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                    <div class="product__img-block">
+                      <img class="product__img" src="http://placehold.it/267x267" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+                      <span class="product__price">355&#8381;<span class="product__weight">/кг</span></span>
+                    </div>
                   </div>
+                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                 </div>
-                <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
               <article class="product">
-                <div class="product__info">
+                <div class="product__inner">
                   <span class="product__flag">Хит!</span>
-                  <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
-                  <div class="product__img-block">
-                    <img class="product__img" src="http://placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-                    <span class="product__price">415&#8381;<span class="product__weight">/кг</span></span>
+                  <div class="product__info">
+                    <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
+                    <div class="product__img-block">
+                      <img class="product__img" src="http://placehold.it/267x267" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+                      <span class="product__price">415&#8381;<span class="product__weight">/кг</span></span>
+                    </div>
                   </div>
+                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                 </div>
-                <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
               </article>
             </section>
           </section>
@@ -249,7 +265,7 @@
                   <div class="subscription__layout">
                     <div class="subscription__fields">
                       <label class="subscription__label" for="subscription-email">Электронная почта</label>
-                      <input class="subscription__input" name="email" id="subscription-email" type="text" placeholder="Электронная почта">
+                      <input class="subscription__input" name="email" id="subscription-email" type="text">
                     </div>
                     <div class="subscription__btn-field">
                       <button class="subscription__btn  btn" type="button">Отправить</button>
@@ -310,10 +326,10 @@
           </ul>
         </div>
         <div class="developer">
-          <a class="developer__logo-link" href="#">
+          <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
             <img class="developer__logo" src="http://placehold.it/108x39" alt="HTML Academy">
           </a>
-          <p class="developer__copyright">Сделано в <a class="developer__copyright-link" href="#">HTML Academy</a> &copy; 2017</p>
+          <p class="developer__copyright">Сделано в <a class="developer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
         </div>
       </footer>
     </div>
