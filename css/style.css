@@ -1,0 +1,159 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto.woff2') format('woff2'),
+       url('../fonts/roboto.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/robotomedium.woff2') format('woff2'),
+       url('../fonts/robotomedium.woff2') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/robotobold.woff2') format('woff2'),
+       url('../fonts/robotobold.woff2') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  min-width: 900px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #849d8f;
+}
+
+.bg-input {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+  padding-top: 9px;
+}
+
+.page-header__layout {
+  position: relative;
+  display: flex;
+}
+
+.main-nav__menu {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__item-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-nav {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+.main-nav__submenu {
+  display: none;
+}
+
+.page-header__logo {
+  display: block;
+  width: 154px;
+  height: 64px;
+}
+
+.page-header__logo-img {
+  display: block;
+  width: 154px;
+  height: 64px;
+}
+
+.page-header__contacts {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.site-search {
+  display: none;
+}
+
+.site-enter {
+  display: none;
+}
+
+.basket-popup {
+  display: none;
+}
+
+.developer__logo-link {
+  display: block;
+  width: 108px;
+  height: 39px;
+}
+
+.developer__logo {
+  display: block;
+  width: 108px;
+  height: 39px;
+}
+
+.popup {
+  display: none;
+}

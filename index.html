@@ -3,121 +3,125 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <div class="page-overlay"></div>
-    <input class="page-bg  page-bg--1" id="page-bg-1" name="bg-input" type="radio" checked>
-    <input class="page-bg  page-bg--2" id="page-bg-2" name="bg-input" type="radio">
-    <input class="page-bg  page-bg--3" id="page-bg-3" name="bg-input" type="radio">
+    <input class="bg-input  bg-input--1" id="page-bg-1" name="bg-input" type="radio" checked>
+    <input class="bg-input  bg-input--2" id="page-bg-2" name="bg-input" type="radio">
+    <input class="bg-input  bg-input--3" id="page-bg-3" name="bg-input" type="radio">
     <div class="page-wrapper">
-      <header class="page-header">
-        <div class="page-header__layout  container">
-          <a class="page-header__logo">
-            <img src="http://placehold.it/154x64" alt="Магазин Глейси" width="154" height="64">
-          </a>
-          <nav class="main-nav">
-            <ul class="main-nav__menu">
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Каталог</a>
-                <ul class="main-nav__submenu">
-                  <li class="main-nav__submenu-item  main-nav__submenu-item--title">
-                    Новинки
-                  </li>
-                  <li class="main-nav__submenu-item">
-                    <a class="main-nav__submenu-link" href="catalog.html">Сливочное</a>
-                  </li>
-                  <li class="main-nav__submenu-item">
-                    <a class="main-nav__submenu-link" href="#">Щербеты</a>
-                  </li>
-                  <li class="main-nav__submenu-item">
-                    <a class="main-nav__submenu-link" href="#">Фруктовый лед</a>
-                  </li>
-                  <li class="main-nav__submenu-item">
-                    <a class="main-nav__submenu-link" href="#">Мелорин</a>
-                  </li>
-                </ul>
+      <div class="container">
+        <header class="page-header">
+          <div class="page-header__layout">
+            <a class="page-header__logo">
+              <img class="page-header__logo-img" src="img/logo.svg" alt="Магазин Глейси" width="154" height="64">
+            </a>
+            <nav class="main-nav">
+              <ul class="main-nav__menu">
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Каталог</a>
+                  <ul class="main-nav__submenu">
+                    <li class="main-nav__submenu-item  main-nav__submenu-item--title">
+                      Новинки
+                    </li>
+                    <li class="main-nav__submenu-item">
+                      <a class="main-nav__submenu-link" href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="main-nav__submenu-item">
+                      <a class="main-nav__submenu-link" href="#">Щербеты</a>
+                    </li>
+                    <li class="main-nav__submenu-item">
+                      <a class="main-nav__submenu-link" href="#">Фруктовый лед</a>
+                    </li>
+                    <li class="main-nav__submenu-item">
+                      <a class="main-nav__submenu-link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__item-link" href="#">О Компании</a>
+                </li>
+              </ul>
+            </nav>
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <a class="user-search-link" href="#">Поиск</a>
+                <form class="site-search" method="get" action="submit" id="site-search">
+                  <label class="site-search__label" for="search-text">Что ищем?</label>
+                  <input class="site-search__input" type="text" id="search-text" name="search-text">
+                </form>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">Доставка и оплата</a>
+              <li class="user-nav__item">
+                <a class="user-enter-link" href="#">Вход</a>
+                <form class="site-enter" method="post" action="submit" id="site-enter">
+                  <div class="site-enter__row">
+                    <label class="site-enter__label" for="user-email">Электронная почта</label>
+                    <input class="site-enter__input" type="text" id="user-email" name="email">
+                  </div>
+                  <div class="site-enter__row">
+                    <label class="site-enter__label" for="password">Пароль</label>
+                    <input class="site-enter__input" type="password" id="password" name="password">
+                  </div>
+                  <div class="site-enter__submit-row">
+                    <button class="site-enter__submit  btn" type="submit" name="enter">Войти</button>
+                    <div class="site-enter__links">
+                      <a class="site-enter__link" href="#">Забыли пароль?</a>
+                      <a class="site-enter__link" href="#">Новая регистрация</a>
+                    </div>
+                  </div>
+                </form>
               </li>
-              <li class="main-nav__item">
-                <a class="main-nav__item-link" href="#">О Компании</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="user-nav">
-            <li class="user-nav__item">
-              <a class="user-search-link" href="#">Поиск</a>
-              <form class="site-search" method="get" action="submit" id="site-search">
-                <label class="site-search__label" for="search-text">Что ищем?</label>
-                <input class="site-search__input" type="text" id="search-text" name="search-text">
-              </form>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-enter-link" href="#">Вход</a>
-              <form class="site-enter" method="post" action="submit" id="site-enter">
-                <div class="site-enter__row">
-                  <label class="site-enter__label" for="user-email">Электронная почта</label>
-                  <input class="site-enter__input" type="text" id="user-email" name="email">
-                </div>
-                <div class="site-enter__row">
-                  <label class="site-enter__label" for="password">Пароль</label>
-                  <input class="site-enter__input" type="password" id="password" name="password">
-                </div>
-                <div class="site-enter__submit-row">
-                  <button class="site-enter__submit  btn" type="submit" name="enter">Войти</button>
-                  <div class="site-enter__links">
-                    <a class="site-enter__link" href="#">Забыли пароль?</a>
-                    <a class="site-enter__link" href="#">Новая регистрация</a>
+              <li class="user-nav__item">
+                <a class="user-basket-link" href="#">
+                  <span class="user-basket-link__empty">Пусто</span>
+                  <span class="user-basket-link__products">
+                    <span class="user-basket-link__products-count">2</span> товара
+                  </span>
+                </a>
+                <div class="basket-popup">
+                  <table class="basket">
+                    <tr class="basket__product">
+                      <td class="basket__product-info">
+                        <button class="basket-remove" type="button" name="basket-remove">Убрать из корзины</button>
+                        <img class="basket__product-img" src="http://placehold.it/33x33" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                        <span class="basket__product-name">Пломбир с апельсиновым джемом</span>
+                      </td>
+                      <td class="basket__net-price">1,5 кг х <span class="basket__base-price">200 руб.</span></td>
+                      <td class="basket__product-price">300 руб.</td>
+                    </tr>
+                    <tr class="basket__product">
+                      <td class="basket__product-info">
+                        <button class="basket-remove" type="button" name="basket-remove">Убрать из корзины</button>
+                        <img class="basket__product-img" src="http://placehold.it/33x33" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                        <span class="basket__product-name">Клубничный пломбир с присыпкой из белого шоколада</span>
+                      </td>
+                      <td class="basket__net-price">1,5 кг х <span class="basket__base-price">300 руб.</span></td>
+                      <td class="basket__product-price">450 руб.</td>
+                    </tr>
+                    <tr class="basket__total">
+                      <td class="basket__total-info" colspan="3">
+                        <b class="basket__full-price">Итого: 750 руб.</b>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="basket-popup__order-wrap">
+                    <a class="basket-popup__order  btn" href="#">Оформить заказ</a>
                   </div>
                 </div>
-              </form>
-            </li>
-            <li class="user-nav__item">
-              <a class="user-basket-link" href="#">
-                <span class="user-basket-link__empty">Пусто</span>
-                <span class="user-basket-link__products">
-                  <span class="user-basket-link__products-count">2</span> товара
-                </span>
-              </a>
-              <div class="basket-popup">
-                <table class="basket">
-                  <tr class="basket__product">
-                    <td class="basket__product-info">
-                      <button class="basket-remove" type="button" name="basket-remove">Убрать из корзины</button>
-                      <img class="basket__product-img" src="http://placehold.it/33x33" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-                      <span class="basket__product-name">Пломбир с апельсиновым джемом</span>
-                    </td>
-                    <td class="basket__net-price">1,5 кг х <span class="basket__base-price">200 руб.</span></td>
-                    <td class="basket__product-price">300 руб.</td>
-                  </tr>
-                  <tr class="basket__product">
-                    <td class="basket__product-info">
-                      <button class="basket-remove" type="button" name="basket-remove">Убрать из корзины</button>
-                      <img class="basket__product-img" src="http://placehold.it/33x33" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-                      <span class="basket__product-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-                    </td>
-                    <td class="basket__net-price">1,5 кг х <span class="basket__base-price">300 руб.</span></td>
-                    <td class="basket__product-price">450 руб.</td>
-                  </tr>
-                  <tr class="basket__total">
-                    <td class="basket__total-info" colspan="3">
-                      <b class="basket__full-price">Итого: 750 руб.</b>
-                    </td>
-                  </tr>
-                </table>
-                <div class="basket-popup__order-wrap">
-                  <a class="basket-popup__order  btn" href="#">Оформить заказ</a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <div class="page-header__contacts">
-            <span class="page-header__office-hours">С 10 до 20, ежедневно</span>
-            <a class="page-header__phone" href="tel:+78124502525">8 812 450-25-25</a>
+              </li>
+            </ul>
+            <div class="page-header__contacts">
+              <span class="page-header__office-hours">С 10 до 20, ежедневно</span>
+              <a class="page-header__phone" href="tel:+78124502525">8 812 450-25-25</a>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      </div>
       <main class="page-main">
         <div class="page-main__layout  container">
           <h1 class="sr-only">Продажа мороженого от производителя</h1>
@@ -290,37 +294,39 @@
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__social">
-          <h2 class="sr-only">Мы в соцсетях</h2>
-          <div class="social-links">
-            <a class="social-link  social-link--tw" href="#">Twitter</a>
-            <a class="social-link  social-link--inst" href="#">Instagram</a>
-            <a class="social-link  social-link--fb" href="#">Facebook</a>
-            <a class="social-link  social-link--vk" href="#">vKontakte</a>
+        <div class="page-footer__layout  container">
+          <div class="page-footer__social">
+            <h2 class="sr-only">Мы в соцсетях</h2>
+            <div class="social-links">
+              <a class="social-link  social-link--tw" href="#">Twitter</a>
+              <a class="social-link  social-link--inst" href="#">Instagram</a>
+              <a class="social-link  social-link--fb" href="#">Facebook</a>
+              <a class="social-link  social-link--vk" href="#">vKontakte</a>
+            </div>
           </div>
-        </div>
-        <div class="page-footer__extra-nav">
-          <h2 class="sr-only">Дополнительная информация</h2>
-          <ul class="extra-nav">
-            <li class="extra-nav__item  extra-nav__item--like">
-              <a class="extra-nav__item-link" href="#">Для поставщиков</a>
-            </li>
-            <li class="extra-nav__item">
-              <a class="extra-nav__item-link" href="#">Наши документы</a>
-            </li>
-            <li class="extra-nav__item">
-              <a class="extra-nav__item-link" href="#">О производстве</a>
-            </li>
-            <li class="extra-nav__item">
-              <a class="extra-nav__item-link" href="#">Экологические стандарты</a>
-            </li>
-          </ul>
-        </div>
-        <div class="developer">
-          <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-            <img class="developer__logo" src="http://placehold.it/108x39" alt="HTML Academy">
-          </a>
-          <p class="developer__copyright">Сделано в <a class="developer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
+          <div class="page-footer__extra-nav">
+            <h2 class="sr-only">Дополнительная информация</h2>
+            <ul class="extra-nav">
+              <li class="extra-nav__item  extra-nav__item--like">
+                <a class="extra-nav__item-link" href="#">Для поставщиков</a>
+              </li>
+              <li class="extra-nav__item">
+                <a class="extra-nav__item-link" href="#">Наши документы</a>
+              </li>
+              <li class="extra-nav__item">
+                <a class="extra-nav__item-link" href="#">О производстве</a>
+              </li>
+              <li class="extra-nav__item">
+                <a class="extra-nav__item-link" href="#">Экологические стандарты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="developer">
+            <a class="developer__logo-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+              <img class="developer__logo" src="img/logo-htmlacademy.svg" alt="HTML Academy">
+            </a>
+            <p class="developer__copyright">Сделано в <a class="developer__copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2017</p>
+          </div>
         </div>
       </footer>
     </div>
