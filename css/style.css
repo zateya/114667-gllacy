@@ -81,14 +81,40 @@ body {
   display: flex;
 }
 
+.page-header__logo {
+  display: block;
+  width: 154px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.page-header__logo-img {
+  display: block;
+  width: 154px;
+  height: 64px;
+}
+
+.main-nav {
+  padding-top: 14px;
+}
+
 .main-nav__menu {
   display: flex;
+  flex-wrap: wrap;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.main-nav__item {
+  padding: 7px 13px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
 }
 
 .main-nav__item-link {
@@ -110,18 +136,6 @@ body {
 
 .main-nav__submenu {
   display: none;
-}
-
-.page-header__logo {
-  display: block;
-  width: 154px;
-  height: 64px;
-}
-
-.page-header__logo-img {
-  display: block;
-  width: 154px;
-  height: 64px;
 }
 
 .page-header__contacts {
