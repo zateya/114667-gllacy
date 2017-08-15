@@ -144,7 +144,7 @@ body {
   right: 0;
 }
 
-.site-search {
+/*.site-search {
   display: none;
 }
 
@@ -154,7 +154,7 @@ body {
 
 .basket-popup {
   display: none;
-}
+}*/
 
 .developer__logo-link {
   display: block;
@@ -168,6 +168,6 @@ body {
   height: 39px;
 }
 
-.popup {
+/*.popup {
   display: none;
-}
+}*/
