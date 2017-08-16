@@ -65,9 +65,9 @@ body {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    background: url("../img/slide-1.png"),
-                url("../img/slide-2.png"),
-                url("../img/slide-3.png");
+    content: url("../img/slide-1.png")
+            url("../img/slide-2.png")
+            url("../img/slide-3.png");
 }
 
 .page-title {
