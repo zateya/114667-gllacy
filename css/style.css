@@ -150,6 +150,7 @@ body {
 }
 
 .main-nav__item {
+  position: relative;
   padding: 7px 13px;
   margin-bottom: 5px;
   font-size: 16px;
@@ -158,6 +159,8 @@ body {
 }
 
 .main-nav__item-link {
+  display: inline-block;
+  vertical-align: top;
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -165,6 +168,13 @@ body {
 
 .main-nav__submenu {
   display: none;
+  background-color:
+}
+
+.main-nav__item:hover .main-nav__submenu {
+  position: absolute;
+  display: block;
+  background-color: #f8f7f4;
 }
 
 .user-nav {
@@ -203,7 +213,8 @@ body {
   overflow: hidden;
 }
 
-.user-nav__item:hover .user-search-link {
+.user-nav__item:hover .user-search-link,
+.user-search-link:focus {
   background: #fff url("../img/icons/loupe-hover.svg") no-repeat center;
 }
 
@@ -278,12 +289,14 @@ body {
   display: none;
 }
 
-.user-nav__item:hover .user-enter-link {
+.user-nav__item:hover .user-enter-link,
+.user-enter-link:focus {
   background-color: #fff;
   color: #323232;
 }
 
-.user-nav__item:hover .user-enter-link::before {
+.user-nav__item:hover .user-enter-link::before,
+.user-enter-link:focus::before {
   background-image: url("../img/icons/entrance-hover.svg");
 }
 
@@ -360,7 +373,8 @@ body {
   border-radius: 22px;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 }
@@ -427,6 +441,23 @@ body {
 .bg-input--2:checked ~ .page-wrapper .showcase__control[for="page-bg-2"],
 .bg-input--3:checked ~ .page-wrapper .showcase__control[for="page-bg-3"] {
   background-color: #fff;
+}
+
+.promo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+}
+
+.promo-block {
+  width: calc(97.8% / 2);
+  min-height: 229px;
+  padding: 20px 20px 24px;
+  border-radius: 10px;
+}
+
+.promo-block--left {
+  background: #a01c39 url("../img/bg-raspberries.jpg") no-repeat center;
 }
 
 .promo-block__title {
