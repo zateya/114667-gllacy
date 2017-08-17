@@ -46,7 +46,7 @@
                 </ul>
               </nav>
               <ul class="user-nav">
-                <li class="user-nav__item">
+                <li class="user-nav__item  user-nav__item--search">
                   <a class="user-search-link" href="#">Поиск</a>
                   <form class="site-search" method="get" action="submit" id="site-search">
                     <label class="site-search__label" for="search-text">Что ищем?</label>
@@ -74,11 +74,9 @@
                   </form>
                 </li>
                 <li class="user-nav__item">
-                  <a class="user-basket-link  user-basket-link--active" href="#">
-                    <span class="user-basket-link__empty">Пусто</span>
-                    <span class="user-basket-link__products">
-                      <span class="user-basket-link__products-count">2</span> товара
-                    </span>
+                  <a class="user-basket-link  user-basket-link--empty  user-basket-link--hidden">Пусто</a>
+                  <a class="user-basket-link  user-basket-link--products" href="#">
+                    <span class="user-basket-link__products-count">2</span> товара
                   </a>
                   <div class="basket-popup">
                     <table class="basket">
