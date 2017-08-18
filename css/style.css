@@ -53,6 +53,11 @@ body {
   background-color: #849d8f;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page-wrapper {
   position: relative;
   width: 100%;
@@ -304,6 +309,24 @@ body {
   position: absolute;
   top: 100%;
   right: 0;
+  text-align: right;
+}
+
+.page-header__office-hours {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-header__phone {
+  display: block;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
 }
 
 .site-search {
@@ -371,6 +394,10 @@ body {
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
           box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border-radius: 22px;
+}
+
+.btn--promo {
+  padding: 11px 22px;
 }
 
 .btn:hover,
@@ -450,29 +477,111 @@ body {
 }
 
 .promo-block {
-  width: calc(97.8% / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc((100% - 2.2%) / 2);
   min-height: 229px;
-  padding: 20px 20px 24px;
-  border-radius: 10px;
+  padding: 14px 20px 24px;
+  border-radius: 15px;
 }
 
-.promo-block--left {
-  background: #a01c39 url("../img/bg-raspberries.jpg") no-repeat center;
+.promo-block--1 {
+  background: #5c0e1f url("../img/bg-raspberries.jpg") no-repeat center;
+}
+
+.promo-block--2 {
+  background: #391d0e url("../img/bg-chocolate.jpg") no-repeat center;
 }
 
 .promo-block__title {
+  margin: 0 0 16px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
+}
+
+.promo-block__info {
+  margin: 0 0 22px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.promo-block__link {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.products__list {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products__item {
+  width: calc((100% - 2.2%*3)/4);
+  margin-right: 2.2%;
+
+}
+
+.products__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__inner {
+  position: relative;
+}
+
+.product__img-block {
+  position: relative;
+  order: -1;
+}
+
+.product__img {
+  display: block;
+  border-radius: 50%;
+  width: 267px;
+}
+
+.product__flag {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product__price {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.product__name {
   margin: 0;
+  text-align: center;
+}
+
+.product__quick-view {
+  display: none;
 }
 
 .features {
+  margin-top: 40px;
   background: #ecdec5 url("../img/waffle.jpg") repeat left top;
   color: #323232;
+  border-radius: 15px;
+  padding: 25px 20px;
 }
 
 .features__title {
+  margin: 0 0 6px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
