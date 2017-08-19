@@ -756,6 +756,10 @@ img {
   display: flex;
 }
 
+.filters__select {
+  display: block;
+}
+
 .filters__radio-inputs,
 .filters__checkbox-inputs {
   display: flex;
