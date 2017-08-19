@@ -50,15 +50,15 @@
               </ul>
             </nav>
             <ul class="user-nav">
-              <li class="user-nav__item">
-                <a class="user-search-link" href="#">Поиск</a>
+              <li class="user-nav__item  user-nav__item--search">
+                <a class="user-search-link" href="search.html">Поиск</a>
                 <form class="site-search" method="get" action="submit" id="site-search">
                   <label class="site-search__label" for="search-text">Что ищем?</label>
                   <input class="site-search__input" type="text" id="search-text" name="search-text">
                 </form>
               </li>
               <li class="user-nav__item">
-                <a class="user-enter-link" href="#">Вход</a>
+                <a class="user-enter-link" href="enter.html">Вход</a>
                 <form class="site-enter" method="post" action="submit" id="site-enter">
                   <div class="site-enter__row">
                     <label class="site-enter__label" for="user-email">Электронная почта</label>
@@ -78,11 +78,9 @@
                 </form>
               </li>
               <li class="user-nav__item">
-                <a class="user-basket-link" href="#">
-                  <span class="user-basket-link__empty">Пусто</span>
-                  <span class="user-basket-link__products">
-                    <span class="user-basket-link__products-count">2</span> товара
-                  </span>
+                <a class="user-basket-link  user-basket-link--empty">Пусто</a>
+                <a class="user-basket-link  user-basket-link--products  user-basket-link--hidden" href="#">
+                  <span class="user-basket-link__products-count">2</span> товара
                 </a>
                 <div class="basket-popup">
                   <table class="basket">
@@ -134,19 +132,19 @@
                 <li class="showcase__slide">
                   <div class="showcase__slide-text">
                     <h3 class="showcase__title">Крем-брюле и пломбир с&nbsp;малиновым джемом</h3>
-                    <a class="showcase__link  btn" href="">Давайте оба!</a>
+                    <a class="showcase__link  btn  btn--large" href="">Давайте оба!</a>
                   </div>
                 </li>
                 <li class="showcase__slide">
                   <div class="showcase__slide-text">
                     <h3 class="showcase__title">Шоколадный пломбир и&nbsp;лимонный сорбет</h3>
-                    <a class="showcase__link  btn" href="">Давайте оба!</a>
+                    <a class="showcase__link  btn  btn--large" href="">Давайте оба!</a>
                   </div>
                 </li>
                 <li class="showcase__slide">
                   <div class="showcase__slide-text">
                     <h3 class="showcase__title">Пломбир с помадкой и&nbsp;клубничный щербет</h3>
-                    <a class="showcase__link  btn" href="">Давайте оба!</a>
+                    <a class="showcase__link  btn  btn--large" href="">Давайте оба!</a>
                   </div>
                 </li>
               </ul>
@@ -159,80 +157,90 @@
             <section class="promotions">
               <h2 class="sr-only">Действующие акции</h2>
               <div class="promo">
-                <div class="promo-block  promo-block--left">
+                <div class="promo-block  promo-block--1">
                   <h3 class="promo-block__title">Малинка даром!</h3>
                   <p class="promo-block__info">
                     При покупке 2 кг любого фруктового
                     мороженого, добавим в ваш заказ банку
                     малинового варенья бесплатно.
                   </p>
-                  <a class="promo-block__link" href="#">Хочу варенье!</a>
+                  <a class="promo-block__link  btn  btn--medium" href="#">Хочу варенье!</a>
                 </div>
-                <div class="promo-block  promo-block--right">
+                <div class="promo-block  promo-block--2">
                   <h3 class="promo-block__title">Шоколадки даром!</h3>
                   <p class="promo-block__info">
                     При покупке 2 кг пломбира, добавим в ваш
                     заказ упаковку вкуснейшей шоколадной
                     присыпки совершенно бесплатно.
                   </p>
-                  <a class="promo-block__link" href="#">Хочу шоколадки!</a>
+                  <a class="promo-block__link  btn  btn--medium" href="#">Хочу шоколадки!</a>
                 </div>
               </div>
             </section>
-            <section class="products  products--hit">
+            <section class="products  products--index">
               <h2 class="sr-only">Хиты продаж</h2>
-              <article class="product">
-                <div class="product__inner">
-                  <span class="product__flag">Хит!</span>
-                  <div class="product__info">
-                    <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                    <div class="product__img-block">
-                      <img class="product__img" src="img/catalog-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-                      <span class="product__price">310&#8381;<span class="product__weight">/кг</span></span>
+              <ul class="products__list">
+                <li class="products__item">
+                  <article class="product">
+                    <div class="product__inner">
+                      <span class="product__flag">Хит!</span>
+                      <div class="product__info">
+                        <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                        <div class="product__img-block">
+                          <img class="product__img" src="img/catalog-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+                          <span class="product__price">310&#8381;<span class="product__weight">/кг</span></span>
+                        </div>
+                      </div>
+                      <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                     </div>
-                  </div>
-                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner">
-                  <span class="product__flag">Хит!</span>
-                  <div class="product__info">
-                    <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
-                    <div class="product__img-block">
-                      <img class="product__img" src="img/catalog-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-                      <span class="product__price">380&#8381;<span class="product__weight">/кг</span></span>
+                  </article>
+                </li>
+                <li class="products__item">
+                  <article class="product">
+                    <div class="product__inner">
+                      <span class="product__flag">Хит!</span>
+                      <div class="product__info">
+                        <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
+                        <div class="product__img-block">
+                          <img class="product__img" src="img/catalog-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+                          <span class="product__price">380&#8381;<span class="product__weight">/кг</span></span>
+                        </div>
+                      </div>
+                      <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                     </div>
-                  </div>
-                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner">
-                  <span class="product__flag">Хит!</span>
-                  <div class="product__info">
-                    <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                    <div class="product__img-block">
-                      <img class="product__img" src="img/catalog-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-                      <span class="product__price">355&#8381;<span class="product__weight">/кг</span></span>
+                  </article>
+                </li>
+                <li class="products__item">
+                  <article class="product">
+                    <div class="product__inner">
+                      <span class="product__flag">Хит!</span>
+                      <div class="product__info">
+                        <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                        <div class="product__img-block">
+                          <img class="product__img" src="img/catalog-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+                          <span class="product__price">355&#8381;<span class="product__weight">/кг</span></span>
+                        </div>
+                      </div>
+                      <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                     </div>
-                  </div>
-                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
-                </div>
-              </article>
-              <article class="product">
-                <div class="product__inner">
-                  <span class="product__flag">Хит!</span>
-                  <div class="product__info">
-                    <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
-                    <div class="product__img-block">
-                      <img class="product__img" src="img/catalog-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-                      <span class="product__price">415&#8381;<span class="product__weight">/кг</span></span>
+                  </article>
+                </li>
+                <li class="products__item">
+                  <article class="product">
+                    <div class="product__inner">
+                      <span class="product__flag">Хит!</span>
+                      <div class="product__info">
+                        <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
+                        <div class="product__img-block">
+                          <img class="product__img" src="img/catalog-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+                          <span class="product__price">415&#8381;<span class="product__weight">/кг</span></span>
+                        </div>
+                      </div>
+                      <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
                     </div>
-                  </div>
-                  <a class="product__quick-view  btn" href="#">Быстрый просмотр</a>
-                </div>
-              </article>
+                  </article>
+                </li>
+              </ul>
             </section>
             <section class="features">
               <h2 class="features__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
@@ -247,7 +255,7 @@
                   Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
                 </li>
                 <li class="features__item  features__item--temperature">
-                  Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+                  Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
                 </li>
               </ul>
             </section>
@@ -285,16 +293,19 @@
         </div>
         <section class="map" id="map">
           <h2 class="sr-only">Схема проезда</h2>
-          <div class="map__container  container">
-            <div class="map__layout  content-box">
-              <section class="map__contacts">
-                <h3 class="map__address-title">Адрес главного офиса и офлайн магазина:</h3>
-                <address class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
-                <h3 class="map__phone-title">Для заказов по телефону:</h3>
-                <p class="map__phone-info"><a class="map__phone" href="tel:+78124502525">8 812 450-25-25</a></p>
-                <p class="map__call-time">(с 10 до 20 ежедневно)</p>
-                <a class="map__feedback-btn  btn" id="map-feedback-btn" href="#">Форма обратной связи</a>
-              </section>
+          <div class="map__content">
+            <img class="map__img" src="img/map.png" width="1200" height="430"  alt="Магазин мороженого Gllacy на карте">
+            <div class="map__container container">
+              <div class="map__layout  content-box">
+                <section class="map__contacts">
+                  <h3 class="map__address-title">Адрес главного офиса и офлайн магазина:</h3>
+                  <address class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+                  <h3 class="map__phone-title">Для заказов по телефону:</h3>
+                  <p class="map__phone-info"><a class="map__phone" href="tel:+78124502525">8 812 450-25-25</a></p>
+                  <p class="map__call-time">(с 10 до 20 ежедневно)</p>
+                  <a class="map__feedback-btn  btn" id="map-feedback-btn" href="feedback.html">Форма обратной связи</a>
+                </section>
+              </div>
             </div>
           </div>
         </section>
