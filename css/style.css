@@ -502,6 +502,8 @@ img {
   -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
           box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
   border-radius: 22px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -539,6 +541,10 @@ img {
 
 .btn--medium {
   padding: 11px 22px;
+}
+
+.btn--full-width {
+  width: 100%;
 }
 
 .showcase__link {
@@ -748,24 +754,104 @@ img {
   display: inline;
 }
 
-.news-post__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-
+.newsletter {
+  padding: 5px;
+  width: calc((100% - 2.2%) / 2);
+  min-height: 220px;
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  background-image: repeating-linear-gradient(135deg, transparent 0, transparent 6.855px, #92cdff 6.855px, #92cdff 13.71px, transparent 13.71px, transparent 20.565px, #fe9e90 20.565px, #fe9e90 27.42px);
+  border-radius: 15px;
 }
 
-.newsletter {
-  width: calc((100% - 2.2%) / 2);
+.newsletter__layout {
+  display: flex;
+  flex-direction: column;
+  padding: 31px 20px 35px;
+  background-color: #f8f7f4;
+  height: 100%;
+  border-radius: 15px;
 }
 
 .newsletter__lead {
   margin: 0;
+  margin-bottom: 12px;
+}
+
+.subscription {
+  margin-top: auto;
 }
 
 .subscription__layout {
   display: flex;
   align-items: center;
+}
+
+.subscription__fields {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.subscription__submit-wrap {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-left: 12px;
+  min-width: 130px;
+}
+
+.subscription__btn {
+  width: 100%;
+}
+
+.field {
+  position: relative;
+  overflow: hidden;
+}
+
+.field__text,
+.field__textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  font: inherit;
+  font-weight: 700;
+  color: #323232;
+  outline: none;
+  z-index: 1;
+}
+
+.field__text:hover,
+.field__textarea:hover {
+  border-color: rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.52);
+}
+
+.field__text:focus,
+.field__textarea:focus {
+  border-color: rgba(154, 154, 154, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(154, 154, 154, 0.52);
+}
+
+.field__text-label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #999999;
+}
+
+.field__text:focus + .field__text-label {
+  top: -20px;
+}
+
+.field__text:valid {
+  background-color: #f8f7f4;
 }
 
 .products--index {
@@ -886,6 +972,10 @@ img {
   color: #323232;
   background-color: #fff;
   border-radius: 15px;
+}
+
+.map__feedback-btn {
+  width: 100%;
 }
 
 .page-footer--inner {

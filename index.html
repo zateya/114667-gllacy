@@ -270,24 +270,26 @@
                   </div>
                 </article>
                 <section class="newsletter">
-                  <h2 class="visually-hidden">Подписка на рассылку</h2>
-                  <p class="newsletter__lead">
-                    Подпишитесь на нашу сладкую рассылку
-                    и будете всегда в курсе всего самого вкусного,
-                    что у нас происходит. Обещаем не спамить и не
-                    слать всякой ненужной ерунды. Честно =)
-                  </p>
-                  <form class="subscription" action="submit" method="post">
-                    <div class="subscription__layout">
-                      <div class="subscription__fields">
-                        <label class="subscription__label" for="subscription-email">Электронная почта</label>
-                        <input class="subscription__input" name="email" id="subscription-email" type="text">
+                  <div class="newsletter__layout">
+                    <h2 class="visually-hidden">Подписка на рассылку</h2>
+                    <p class="newsletter__lead">
+                      Подпишитесь на нашу сладкую рассылку
+                      и будете всегда в курсе всего самого вкусного,
+                      что у нас происходит. Обещаем не спамить и не
+                      слать всякой ненужной ерунды. Честно =)
+                    </p>
+                    <form class="subscription" action="submit" method="post">
+                      <div class="subscription__layout">
+                        <div class="subscription__fields  field">
+                          <input class="subscription__input  field__text" name="email" id="subscription-email" type="text">
+                          <label class="subscription__label  field__text-label" for="subscription-email">Электронная почта</label>
+                        </div>
+                        <div class="subscription__submit-wrap">
+                          <button class="subscription__btn  btn" type="submit">Отправить</button>
+                        </div>
                       </div>
-                      <div class="subscription__submit-wrap">
-                        <button class="subscription__btn  btn" type="submit">Отправить</button>
-                      </div>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </section>
               </div>
             </section>
