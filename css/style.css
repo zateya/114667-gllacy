@@ -616,7 +616,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: calc((100% - 2.2%) / 2);
+  width: 48.9%;
   min-height: 229px;
   padding: 14px 20px 24px;
   border-radius: 15px;
@@ -654,11 +654,11 @@ img {
   background: #ecdec5 url("../img/waffle.jpg") repeat left top;
   color: #323232;
   border-radius: 15px;
-  padding: 25px 20px;
+  padding: 25px 0;
 }
 
 .features__title {
-  margin: 0;
+  margin: 0 20px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -681,6 +681,14 @@ img {
   width: calc((100% - 2.2%)/2);
 }
 
+.features__item:nth-child(2n) {
+  padding-right: 20px;
+}
+
+.features__item:nth-child(2n + 1) {
+  padding-left: 76px;
+}
+
 .features__item::before {
   content: "";
   position: absolute;
@@ -692,6 +700,10 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 49px 49px;
+}
+
+.features__item:nth-child(2n + 1)::before {
+  left: 20px;
 }
 
 .features__item--icecream::before {
@@ -717,7 +729,7 @@ img {
 }
 
 .news-post {
-  width: calc((100% - 2.2%) / 2);
+  width: 48.9%;
   padding: 23px 20px;
   border-radius: 15px;
   color: #5a5a5a;
@@ -756,7 +768,7 @@ img {
 
 .newsletter {
   padding: 5px;
-  width: calc((100% - 2.2%) / 2);
+  width: 48.9%;
   min-height: 220px;
   color: #5a5a5a;
   background-color: #f8f7f4;
@@ -814,7 +826,7 @@ img {
   padding: 10px 14px;
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
-  background: none;
+  background: #ffffff;
   position: relative;
   top: 0;
   left: 0;
@@ -839,19 +851,15 @@ img {
 
 .field__text-label {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   width: 100%;
   color: #999999;
+  z-index: 1;
 }
 
 .field__text:focus + .field__text-label {
   top: -20px;
-}
-
-.field__text:valid {
-  background-color: #f8f7f4;
 }
 
 .products--index {
@@ -871,9 +879,8 @@ img {
 }
 
 .products__item {
-  width: calc((100% - 2.2%*3)/4);
+  width: 23.35%;
   margin-right: 2.2%;
-
 }
 
 .products__item:nth-child(4n) {
