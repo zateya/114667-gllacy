@@ -729,12 +729,14 @@ img {
 }
 
 .news-post {
+  position: relative;
   width: 48.9%;
   padding: 23px 20px;
   border-radius: 15px;
   color: #5a5a5a;
   min-height: 220px;
-  background: #fff url("../img/bg-icecream.jpg") no-repeat calc(100% + 29px) -36px;
+  overflow: hidden;
+  background: #fff url("../img/bg-icecream.jpg") no-repeat right -36px top -29px;
 }
 
 .news-post__preview {
