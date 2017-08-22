@@ -295,21 +295,20 @@
             </section>
           </div>
         </div>
-        <section class="map" id="map">
+        <section class="map">
           <h2 class="visually-hidden">Схема проезда</h2>
-          <div class="map__content">
-            <img class="map__img" src="img/map.png" width="1200" height="430"  alt="Магазин мороженого Gllacy на карте">
-            <div class="map__container container">
-              <div class="map__layout  content-box">
-                <section class="map__contacts">
-                  <h3 class="map__address-title">Адрес главного офиса и офлайн магазина:</h3>
-                  <address class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
-                  <h3 class="map__phone-title">Для заказов по телефону:</h3>
-                  <p class="map__phone-info"><a class="map__phone" href="tel:+78124502525">8 812 450-25-25</a></p>
-                  <p class="map__call-time">(с 10 до 20 ежедневно)</p>
-                  <a class="map__feedback-btn  btn" id="map-feedback-btn" href="feedback.html">Форма обратной связи</a>
-                </section>
-              </div>
+          <img class="map__img" src="img/map.png" width="1200" height="430"  alt="Магазин мороженого Gllacy на карте">
+          <div class="map__content" id="map"></div>
+          <div class="map__container container">
+            <div class="map__layout  content-box">
+              <section class="map__contacts">
+                <h3 class="map__address-title">Адрес главного офиса и офлайн магазина:</h3>
+                <address class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
+                <h3 class="map__phone-title">Для заказов по телефону:</h3>
+                <a class="map__phone" href="tel:+78124502525">8 812 450-25-25</a>
+                <span class="map__call-time">(с 10 до 20 ежедневно)</span>
+                <a class="map__feedback-btn  btn" id="map-feedback-btn" href="feedback.html">Форма обратной связи</a>
+              </section>
             </div>
           </div>
         </section>
@@ -374,5 +373,7 @@
         </div>
       </form>
     </div>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
