@@ -881,6 +881,7 @@ img {
 }
 
 .products__item {
+  position: relative;
   width: 23.35%;
   margin-right: 2.2%;
 }
@@ -894,8 +895,45 @@ img {
   flex-direction: column;
 }
 
+.product {
+  position: relative;
+}
+
+.product::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: -9px;
+  left: -13px;
+  right: -13px;
+  bottom: 0;
+  height: calc(100% + 76px);
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.product:hover::after {
+  display: block;
+  margin-bottom: -80px;
+}
+
+.product:hover .product__quick-view{
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .product__inner {
   position: relative;
+}
+
+.product:hover .product__inner {
+  z-index: 2;
 }
 
 .product__img-block {
@@ -911,23 +949,72 @@ img {
 
 .product__flag {
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
+  width: 61px;
+  height: 61px;
+  background: url("../img/icons/hit.svg") no-repeat top left;
+  background-size: 61px 61px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 3;
 }
 
 .product__price {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 9px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.product__currency {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 31px;
+  height: 36px;
+  top: 3px;
+  left: 3px;
+  margin-right: 3px;
+  background: url("../img/icons/ruble.svg") no-repeat top left;
+  background-size: 31px 36px;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+
+.product__weight {
+  font-size: 30px;
 }
 
 .product__name {
-  margin: 0;
+  margin: 14px 0 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
   text-align: center;
+}
+
+.product__name-link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.product__name-link:hover,
+.product__name-link:focus,
+.product__name-link:active {
+  color: #ffbc9e;
+  border-color: rgba(249, 172, 159, 0.3);
 }
 
 .product__quick-view {
   display: none;
+  margin-top: 10px;
+  max-width: 200px;
 }
 
 .filters__row {
