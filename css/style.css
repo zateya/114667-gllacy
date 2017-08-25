@@ -1059,7 +1059,7 @@ img {
 }
 
 .filters__select {
-  padding: 9px 16px 9px 28px;
+  padding: 9px 28px 9px 16px;
   border: 0;
   border-radius: 18px;
   font-family: inherit;
