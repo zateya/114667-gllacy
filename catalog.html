@@ -140,12 +140,15 @@
                 <div class="filters__row">
                   <div class="filters__sort-fields">
                     <label class="filters__label">Сортировка:</label>
-                    <select class="filters__select" name="sort">
-                      <option value="popular" selected>по популярности</option>
-                      <option value="сheap">сначала недорогие</option>
-                      <option value="expensive">сначала дорогие</option>
-                      <option value="fat">по жирности</option>
-                    </select>
+                    <div class="filters__select-field">
+                      <select class="filters__select" name="sort">
+                        <option value="popular" selected>по популярности</option>
+                        <option value="сheap">сначала недорогие</option>
+                        <option value="expensive">сначала дорогие</option>
+                        <option value="fat">по жирности</option>
+                      </select>
+                      <span class="filters__select-indicator"></span>
+                    </div>
                   </div>
                   <div class="filters__price-fields">
                     <div class="filters__price-inputs">
@@ -158,10 +161,8 @@
                       <div class="filters__range-scale">
                         <div class="filters__range-value"></div>
                       </div>
-                      <div class="filters__range-controls">
-                        <span class="filters__range-min"></span>
-                        <span class="filters__range-max"></span>
-                      </div>
+                      <span class="filters__range-btn  filters__range-btn--min"></span>
+                      <span class="filters__range-btn  filters__range-btn--max"></span>
                     </div>
                   </div>
                   <div class="filters__fat-fields">
@@ -213,7 +214,7 @@
                     </ul>
                   </div>
                   <div class="filters__apply-field">
-                    <button class="filters__apply  filters-btn" type="submit" name="apply-filters">Применить</button>
+                    <button class="filters__apply  action-btn" type="submit" name="apply-filters">Применить</button>
                   </div>
                 </div>
               </form>
