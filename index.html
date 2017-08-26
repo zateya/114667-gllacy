@@ -54,31 +54,37 @@
               <li class="user-nav__item  user-nav__item--search">
                 <a class="user-search-link" href="search.html">Поиск</a>
                 <form class="site-search" method="get" action="submit" id="site-search">
-                  <label class="site-search__label" for="search-text">Что ищем?</label>
-                  <input class="site-search__input" type="text" id="search-text" name="search-text">
+                  <div class="site-search__field  field">
+                    <input class="site-search__input  field__text" type="text" id="search-text" name="search-text">
+                    <label class="site-search__label  field__text-label  field__text-label--small" for="search-text">Что ищем?</label>
+                  </div>
                 </form>
               </li>
-              <li class="user-nav__item">
+              <li class="user-nav__item  user-nav__item--enter">
                 <a class="user-enter-link" href="enter.html">Вход</a>
                 <form class="site-enter" method="post" action="submit" id="site-enter">
-                  <div class="site-enter__row">
-                    <label class="site-enter__label" for="user-email">Электронная почта</label>
-                    <input class="site-enter__input" type="text" id="user-email" name="email">
+                  <div class="site-enter__row  field">
+                    <input class="site-enter__input  field__text" type="text" id="user-email" name="email">
+                    <label class="site-enter__label  field__text-label  field__text-label--small" for="user-email">Электронная почта</label>
                   </div>
-                  <div class="site-enter__row">
-                    <label class="site-enter__label" for="password">Пароль</label>
-                    <input class="site-enter__input" type="password" id="password" name="password">
+                  <div class="site-enter__row  field">
+                    <input class="site-enter__input  field__text" type="password" id="password" name="password">
+                    <label class="site-enter__label  field__text-label  field__text-label--small" for="password">Пароль</label>
                   </div>
                   <div class="site-enter__submit-row">
                     <button class="site-enter__submit  btn" type="submit" name="enter">Войти</button>
-                    <div class="site-enter__links">
-                      <a class="site-enter__link" href="#">Забыли пароль?</a>
-                      <a class="site-enter__link" href="#">Новая регистрация</a>
-                    </div>
+                    <ul class="site-enter__links">
+                      <li class="site-enter__links-item">
+                        <a class="site-enter__link" href="#">Забыли пароль?</a>
+                      </li>
+                      <li class="site-enter__links-item">
+                        <a class="site-enter__link" href="#">Новая регистрация</a>
+                      </li>
+                    </ul>
                   </div>
                 </form>
               </li>
-              <li class="user-nav__item">
+              <li class="user-nav__item  user-nav__item--basket">
                 <a class="user-basket-link  user-basket-link--empty">Пусто</a>
                 <a class="user-basket-link  user-basket-link--products  user-basket-link--hidden" href="#">
                   <span class="user-basket-link__products-count">2</span> товара
@@ -86,25 +92,33 @@
                 <div class="basket-popup">
                   <table class="basket">
                     <tr class="basket__product">
-                      <td class="basket__product-info">
+                      <td class="basket__product-remove">
                         <button class="basket-remove" type="button" name="basket-remove">Убрать из корзины</button>
+                      </td>
+                      <td class="basket__product-img-info">
                         <img class="basket__product-img" src="img/catalog-1_s.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+                      </td>
+                      <td class="basket__product-info">
                         <span class="basket__product-name">Пломбир с апельсиновым джемом</span>
                       </td>
                       <td class="basket__net-price">1,5 кг х <span class="basket__base-price">200 руб.</span></td>
                       <td class="basket__product-price">300 руб.</td>
                     </tr>
                     <tr class="basket__product">
-                      <td class="basket__product-info">
+                      <td class="basket__product-remove">
                         <button class="basket-remove" type="button" name="basket-remove">Убрать из корзины</button>
+                      </td>
+                      <td class="basket__product-img-info">
                         <img class="basket__product-img" src="img/catalog-3_s.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+                      </td>
+                      <td class="basket__product-info">
                         <span class="basket__product-name">Клубничный пломбир с присыпкой из белого шоколада</span>
                       </td>
                       <td class="basket__net-price">1,5 кг х <span class="basket__base-price">300 руб.</span></td>
                       <td class="basket__product-price">450 руб.</td>
                     </tr>
                     <tr class="basket__total">
-                      <td class="basket__total-info" colspan="3">
+                      <td class="basket__total-info" colspan="5">
                         <b class="basket__full-price">Итого: 750 руб.</b>
                       </td>
                     </tr>
