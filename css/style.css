@@ -641,9 +641,9 @@ img {
 }
 
 .basket__product-price {
-  padding: 18.5px 19px 18.5px 8px;
-  text-align: right;
+  padding: 18.5px 8.5px 18.5px 0;
   vertical-align: top;
+  text-align: center;
 }
 
 .basket__total-info {
