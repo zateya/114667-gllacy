@@ -353,7 +353,7 @@ img {
   margin-bottom: 4px;
   margin-right: 5px;
   margin-left: 50px;
-  background: rgba(255, 255, 255, 0.2) url("../img/icons/loupe.svg") no-repeat center;
+  background: rgba(255, 255, 255, 0.2) url("../img/icons/loupe.svg") no-repeat 7px 7px;
   background-size: 17px 17px;
   border-radius: 50%;
   text-indent: -1000px;
@@ -362,7 +362,7 @@ img {
 
 .user-nav__item:hover .user-search-link,
 .user-search-link:focus {
-  background: #fff url("../img/icons/loupe-hover.svg") no-repeat center;
+  background: #fff url("../img/icons/loupe-hover.svg") no-repeat 7px 7px;
 }
 
 .site-search {
