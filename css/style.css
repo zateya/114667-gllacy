@@ -1493,6 +1493,13 @@ img {
   width: 702px;
 }
 
+.filters__price-inputs {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
 .filters__price-input {
   border: 0;
   background-color: transparent;
