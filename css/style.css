@@ -1494,7 +1494,8 @@ img {
 }
 
 .filters__price-inputs {
-  margin-bottom: 4px;
+  display: inline-block;
+  vertical-align: top;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
