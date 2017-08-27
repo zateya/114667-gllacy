@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page  page--index">
-    <div class="page-overlay"></div>
+    <div class="page-overlay  page-overlay--hide"></div>
     <input class="bg-input  bg-input--1" id="page-bg-1" name="bg-input" type="radio" checked>
     <input class="bg-input  bg-input--2" id="page-bg-2" name="bg-input" type="radio">
     <input class="bg-input  bg-input--3" id="page-bg-3" name="bg-input" type="radio">
@@ -385,26 +385,26 @@
         </div>
       </footer>
     </div>
-    <div class="popup" id="feedback-popup">
-      <button class="popup__close" type="button" name="button">Закрыть</button>
+    <div class="popup  popup--closed" id="feedback-popup">
       <div class="popup__title">Мы обязательно вам ответим!</div>
       <form class="feedback" action="submit" method="post">
-        <div class="feedback__row">
-          <label class="feedback__label" for="feedback-name">Как вас зовут?</label>
-          <input class="feedback__input" type="text" id="feedback-name" name="name">
+        <div class="feedback__row  feedback__row--name  field">
+          <input class="feedback__name  field__text" type="text" id="feedback-name" name="name">
+          <label class="feedback__label  field__text-label" for="feedback-name">Как вас зовут?</label>
         </div>
-        <div class="feedback__row">
-          <label class="feedback__label" for="feedback-email">Ваша почта для ответа?</label>
-          <input class="feedback__input" type="email" id="feedback-email" name="email">
+        <div class="feedback__row  feedback__row--email  field">
+          <input class="feedback__email  field__text" type="email" id="feedback-email" name="email">
+          <label class="feedback__label  field__text-label" for="feedback-email">Ваша почта для ответа?</label>
         </div>
-        <div class="feedback__row">
-          <label class="feedback__label" for="feedback-message">Напишите что-нибудь...</label>
-          <textarea class="feedback__textarea" id="feedback-message" name="message"></textarea>
+        <div class="feedback__row  field">
+          <textarea class="feedback__message  field__text  field__text--textarea" id="feedback-message" name="message"></textarea>
+          <label class="feedback__label  field__text-label" for="feedback-message">Напишите что-нибудь...</label>
         </div>
         <div class="feedback__submit-row">
           <button class="feedback__submit  btn" type="submit" name="feedback-submit">Отправить</button>
         </div>
       </form>
+      <button class="popup__close" type="button" name="button" title="Закрыть">Закрыть</button>
     </div>
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript" src="js/script.js"></script>
