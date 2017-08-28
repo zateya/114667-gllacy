@@ -1,11 +1,9 @@
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .visually-hidden {
@@ -52,6 +50,20 @@ img {
     content: url("../img/slide-1.png")
             url("../img/slide-2.png")
             url("../img/slide-3.png");
+}
+
+.page::after {
+  position:absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../img/icons/loupe-hover.svg")
+            url("../img/icons/entrance-hover.svg")
+            url("../img/icons/twitter-active.svg")
+            url("../img/icons/fb-active.svg")
+            url("../img/icons/instagram-active.svg")
+            url("../img/icons/vk-active.svg");
 }
 
 .page--inner .page-wrapper::before {
