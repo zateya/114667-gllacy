@@ -55,7 +55,7 @@
                 <a class="user-search-link" href="search.html">Поиск</a>
                 <form class="site-search" method="get" action="submit" id="site-search">
                   <div class="site-search__field  field">
-                    <input class="site-search__input  field__text" type="text" id="search-text" name="search-text">
+                    <input class="site-search__input  field__text" type="text" id="search-text" name="search-text" required>
                     <label class="site-search__label  field__text-label  field__text-label--small" for="search-text">Что ищем?</label>
                   </div>
                 </form>
@@ -64,11 +64,11 @@
                 <a class="user-enter-link" href="enter.html">Вход</a>
                 <form class="site-enter" method="post" action="submit" id="site-enter">
                   <div class="site-enter__row  field">
-                    <input class="site-enter__input  field__text" type="text" id="user-email" name="email">
+                    <input class="site-enter__input  field__text" type="text" id="user-email" name="email" required>
                     <label class="site-enter__label  field__text-label  field__text-label--small" for="user-email">Электронная почта</label>
                   </div>
                   <div class="site-enter__row  field">
-                    <input class="site-enter__input  field__text" type="password" id="password" name="password">
+                    <input class="site-enter__input  field__text" type="password" id="password" name="password" required>
                     <label class="site-enter__label  field__text-label  field__text-label--small" for="password">Пароль</label>
                   </div>
                   <div class="site-enter__submit-row">
@@ -200,11 +200,11 @@
                     <div class="product__inner">
                       <span class="product__flag">Хит!</span>
                       <div class="product__info">
-                        <h3 class="product__name">
-                          <a class="product__name-link" href="#">
+                        <a class="product__name-link" href="#">
+                          <h3 class="product__name">
                             Сливочное с апельсиновым джемом и цитрусовой стружкой
-                          </a>
-                        </h3>
+                          </h3>
+                        </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
                           <span class="product__price">310<span class="product__currency">&#8381;</span><span class="product__weight">/кг</span></span>
@@ -219,11 +219,11 @@
                     <div class="product__inner">
                       <span class="product__flag">Хит!</span>
                       <div class="product__info">
-                        <h3 class="product__name">
-                          <a class="product__name-link" href="#">
+                        <a class="product__name-link" href="#">
+                          <h3 class="product__name">
                             Сливочно-кофейное с кусочками шоколада
-                          </a>
-                        </h3>
+                          </h3>
+                        </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
                           <span class="product__price">380<span class="product__currency">&#8381;</span><span class="product__weight">/кг</span></span>
@@ -238,11 +238,11 @@
                     <div class="product__inner">
                       <span class="product__flag">Хит!</span>
                       <div class="product__info">
-                        <h3 class="product__name">
-                          <a class="product__name-link" href="#">
+                        <a class="product__name-link" href="#">
+                          <h3 class="product__name">
                             Сливочно-клубничное с присыпкой из белого шоколада
-                          </a>
-                        </h3>
+                          </h3>
+                        </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
                           <span class="product__price">355<span class="product__currency">&#8381;</span><span class="product__weight">/кг</span></span>
@@ -257,11 +257,11 @@
                     <div class="product__inner">
                       <span class="product__flag">Хит!</span>
                       <div class="product__info">
-                        <h3 class="product__name">
-                          <a class="product__name-link" href="#">
+                        <a class="product__name-link" href="#">
+                          <h3 class="product__name">
                             Сливочное крем-брюле с карамельной подливкой
-                          </a>
-                        </h3>
+                          </h3>
+                        </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
                           <span class="product__price">415<span class="product__currency">&#8381;</span><span class="product__weight">/кг</span></span>
@@ -312,7 +312,7 @@
                     <form class="subscription" action="submit" method="post">
                       <div class="subscription__layout">
                         <div class="subscription__fields  field">
-                          <input class="subscription__input  field__text" name="email" id="subscription-email" type="text">
+                          <input class="subscription__input  field__text" name="email" id="subscription-email" type="text" required>
                           <label class="subscription__label  field__text-label" for="subscription-email">Электронная почта</label>
                         </div>
                         <div class="subscription__submit-wrap">
@@ -389,15 +389,15 @@
       <div class="popup__title">Мы обязательно вам ответим!</div>
       <form class="feedback" action="submit" method="post">
         <div class="feedback__row  feedback__row--name  field">
-          <input class="feedback__name  field__text" type="text" id="feedback-name" name="name">
+          <input class="feedback__name  field__text" type="text" id="feedback-name" name="name" required>
           <label class="feedback__label  field__text-label" for="feedback-name">Как вас зовут?</label>
         </div>
         <div class="feedback__row  feedback__row--email  field">
-          <input class="feedback__email  field__text" type="email" id="feedback-email" name="email">
+          <input class="feedback__email  field__text" type="text" id="feedback-email" name="email" required>
           <label class="feedback__label  field__text-label" for="feedback-email">Ваша почта для ответа?</label>
         </div>
         <div class="feedback__row  field">
-          <textarea class="feedback__message  field__text  field__text--textarea" id="feedback-message" name="message"></textarea>
+          <textarea class="feedback__message  field__text  field__text--textarea" id="feedback-message" name="message" required></textarea>
           <label class="feedback__label  field__text-label" for="feedback-message">Напишите что-нибудь...</label>
         </div>
         <div class="feedback__submit-row">
