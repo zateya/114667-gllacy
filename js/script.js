@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   var feedbackLink = document.querySelector(".map__feedback-btn");
   var feedbackPopup = document.querySelector("#feedback-popup");
   var feedbackClose = feedbackPopup.querySelector(".popup__close");
