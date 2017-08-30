@@ -168,7 +168,9 @@
                     <div class="filters__price-inputs">
                       <label class="filters__label">Цена:</label>
                       <span class="filters__price-inputs">
+                        <label class="visually-hidden" for="price-min">Стоимость от</label>
                         <input class="filters__price-input" type="text" id="price-min" value="100"> руб. &ndash;
+                        <label class="visually-hidden" for="price-max">Стоимость до</label>
                         <input class="filters__price-input" type="text" id="price-max" value="500"> руб.
                       </span>
                     </div>
@@ -176,8 +178,8 @@
                       <div class="filters__range-scale">
                         <div class="filters__range-value"></div>
                       </div>
-                      <span class="filters__range-btn  filters__range-btn--min"></span>
-                      <span class="filters__range-btn  filters__range-btn--max"></span>
+                      <span class="filters__range-btn  filters__range-btn--min" tabindex="0"></span>
+                      <span class="filters__range-btn  filters__range-btn--max" tabindex="0"></span>
                     </div>
                   </div>
                   <div class="filters__fat-fields">

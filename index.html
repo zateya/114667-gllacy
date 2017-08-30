@@ -164,9 +164,9 @@
                 </li>
               </ul>
               <div class="showcase__controls">
-                <label class="showcase__control  showcase__control--1" for="page-bg-1"></label>
-                <label class="showcase__control  showcase__control--2" for="page-bg-2"></label>
-                <label class="showcase__control  showcase__control--3" for="page-bg-3"></label>
+                <label class="showcase__control  showcase__control--1" for="page-bg-1" tabindex="0"></label>
+                <label class="showcase__control  showcase__control--2" for="page-bg-2" tabindex="0"></label>
+                <label class="showcase__control  showcase__control--3" for="page-bg-3" tabindex="0"></label>
               </div>
             </section>
             <section class="promotions">
@@ -387,7 +387,7 @@
     </div>
     <div class="popup  popup--closed" id="feedback-popup">
       <div class="popup__title">Мы обязательно вам ответим!</div>
-      <form class="feedback" action="submit" method="post">
+      <form class="feedback" action="https://echo.htmlacademy.ru/" method="post">
         <div class="feedback__row  feedback__row--name  field">
           <input class="feedback__name  field__text" type="text" id="feedback-name" name="name" required>
           <label class="feedback__label  field__text-label" for="feedback-name">Как вас зовут?</label>
@@ -401,7 +401,7 @@
           <label class="feedback__label  field__text-label" for="feedback-message">Напишите что-нибудь...</label>
         </div>
         <div class="feedback__submit-row">
-          <button class="feedback__submit  btn" type="submit" name="feedback-submit">Отправить</button>
+          <button class="feedback__submit  btn" type="submit">Отправить</button>
         </div>
       </form>
       <button class="popup__close" type="button" name="button" title="Закрыть">Закрыть</button>
