@@ -408,6 +408,11 @@ img {
   display: block;
 }
 
+.user-nav__item:hover .site-search,
+.user-search-link--opened + .site-search {
+  display: block;
+}
+
 .user-nav__item--enter {
   position: relative;
 }
@@ -455,7 +460,8 @@ img {
   z-index: 3;
 }
 
-.user-nav__item:hover .site-enter {
+.user-nav__item:hover .site-enter,
+.user-enter-link--opened + .site-enter {
   display: block;
 }
 
@@ -578,7 +584,8 @@ img {
   z-index: 2;
 }
 
-.user-nav__item--basket-opened:hover .basket-popup {
+.user-nav__item--basket-opened:hover .basket-popup,
+.user-basket-link--opened + .basket-popup {
   display: block;
 }
 
