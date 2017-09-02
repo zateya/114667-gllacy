@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page  page--inner">
     <div class="page-wrapper">
@@ -49,7 +49,7 @@
               <ul class="user-nav">
                 <li class="user-nav__item  user-nav__item--search">
                   <a class="user-search-link" href="search.html">Поиск</a>
-                  <form class="site-search" method="get" action="submit" id="site-search" required>
+                  <form class="site-search" method="get" action="submit" id="site-search">
                     <div class="site-search__field  field">
                       <input class="site-search__input  field__text" type="text" id="search-text" name="search-text" required>
                       <label class="site-search__label  field__text-label  field__text-label--small" for="search-text">Что ищем?</label>
@@ -198,7 +198,7 @@
                         <label class="filters__radio-label" for="fat-30">до 30%</label>
                       </li>
                       <li class="filters__radio-item">
-                        <input class="filters__radio" type="radio" name="fat" id="fat-30plus" value="выше 30%" disabled>
+                        <input class="filters__radio" type="radio" name="fat" id="fat-30plus" value="выше 30%">
                         <label class="filters__radio-label" for="fat-30plus">выше 30%</label>
                       </li>
                     </ul>
@@ -225,7 +225,7 @@
                         <label class="filters__checkbox-label" for="syrups">сиропы</label>
                       </li>
                       <li class="filters__checkbox-item">
-                        <input class="filters__checkbox" type="checkbox" name="jams" id="jams" value="джемы" disabled>
+                        <input class="filters__checkbox" type="checkbox" name="jams" id="jams" value="джемы">
                         <label class="filters__checkbox-label" for="jams">джемы</label>
                       </li>
                     </ul>
@@ -240,13 +240,11 @@
               <h2 class="visually-hidden">Ассортимент сливочного мороженого Gllacy</h2>
               <ul class="products__list">
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочное с апельсиновым джемом и цитрусовой стружкой
-                          </h3>
+                          <h3 class="product__name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
@@ -258,13 +256,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочно-кофейное с кусочками шоколада
-                          </h3>
+                          <h3 class="product__name">Сливочно-кофейное с кусочками шоколада</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-2.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
@@ -276,13 +272,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочно-клубничное с присыпкой из белого шоколада
-                          </h3>
+                          <h3 class="product__name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
@@ -294,13 +288,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочное крем-брюле с карамельной подливкой
-                          </h3>
+                          <h3 class="product__name">Сливочное крем-брюле с карамельной подливкой</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
@@ -312,13 +304,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочное с брусничным джемом
-                          </h3>
+                          <h3 class="product__name">Сливочное с брусничным джемом</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-5.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
@@ -330,13 +320,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочно-черничное с цельными ягодами черники
-                          </h3>
+                          <h3 class="product__name">Сливочно-черничное с цельными ягодами черники</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-6.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
@@ -348,13 +336,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочно-лимонное с карамельной присыпкой
-                          </h3>
+                          <h3 class="product__name">Сливочно-лимонное с карамельной присыпкой</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-7.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
@@ -366,13 +352,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочное с шоколадной стружкой
-                          </h3>
+                          <h3 class="product__name">Сливочное с шоколадной стружкой</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-8.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
@@ -384,13 +368,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочно-ванильное с кусочками шоколада
-                          </h3>
+                          <h3 class="product__name">Сливочно-ванильное с кусочками шоколада</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-9.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
@@ -402,13 +384,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочноe с ментоловым сиропом
-                          </h3>
+                          <h3 class="product__name">Сливочноe с ментоловым сиропом</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-10.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
@@ -420,13 +400,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочное с кусочками черного шоколада
-                          </h3>
+                          <h3 class="product__name">Сливочное с кусочками черного шоколада</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
@@ -438,13 +416,11 @@
                   </article>
                 </li>
                 <li class="products__item">
-                  <article class="product">
+                  <article class="product" tabindex="0">
                     <div class="product__inner">
                       <div class="product__info">
                         <a class="product__name-link" href="#">
-                          <h3 class="product__name">
-                            Сливочное с мятным сиропом
-                          </h3>
+                          <h3 class="product__name">Сливочное с мятным сиропом</h3>
                         </a>
                         <div class="product__img-block">
                           <img class="product__img" src="img/catalog-12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
@@ -510,5 +486,7 @@
         </div>
       </footer>
     </div>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="js/script.min.js"></script>
   </body>
 </html>
