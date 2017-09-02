@@ -73,6 +73,8 @@ img {
   width: 100%;
   height: 656px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(transparent));
+  background-image: -webkit-linear-gradient(top, #fff 0%, transparent 100%);
+  background-image: -o-linear-gradient(top, #fff 0%, transparent 100%);
   background-image: linear-gradient(to bottom, #fff 0%, transparent 100%);
   opacity: 0.2;
 }
@@ -650,7 +652,8 @@ img {
   top: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   border-radius: 50%;
 }
 
@@ -788,7 +791,7 @@ img {
 
 .showcase {
   position: relative;
-  min-height: 533px;
+  height: 533px;
 }
 
 .showcase__slides {
@@ -826,6 +829,7 @@ img {
 }
 
 .showcase__title {
+  width: 100%;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -844,6 +848,8 @@ img {
   font-weight: 700;
   border: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
+  background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+  background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
           box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -855,6 +861,8 @@ img {
 .btn:hover,
 .btn:focus {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
+  background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+  background-image: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   -webkit-box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
           box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 1);
@@ -862,6 +870,8 @@ img {
 
 .btn:active {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#d74632), to(#e1613e));
+  background-image: -webkit-linear-gradient(top, #d74632 0%, #e1613e 100%);
+  background-image: -o-linear-gradient(top, #d74632 0%, #e1613e 100%);
   background-image: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px 0 #942718;
           box-shadow: inset 0 2px 2px 0 #942718;
@@ -989,6 +999,8 @@ img {
 }
 
 .promo-block__title {
+  display: block;
+  width: 100%;
   margin: 0 0 15px;
   font-size: 35px;
   line-height: 41px;
@@ -996,6 +1008,8 @@ img {
 }
 
 .promo-block__info {
+  display: block;
+  width: 100%;
   margin: 0 0 22px 1px;
   font-size: 18px;
   line-height: 22px;
@@ -1144,6 +1158,8 @@ img {
   min-height: 220px;
   color: #5a5a5a;
   background-color: #f8f7f4;
+  background-image: -webkit-repeating-linear-gradient(315deg, transparent 0, transparent 6.855px, #92cdff 6.855px, #92cdff 13.71px, transparent 13.71px, transparent 20.565px, #fe9e90 20.565px, #fe9e90 27.42px);
+  background-image: -o-repeating-linear-gradient(315deg, transparent 0, transparent 6.855px, #92cdff 6.855px, #92cdff 13.71px, transparent 13.71px, transparent 20.565px, #fe9e90 20.565px, #fe9e90 27.42px);
   background-image: repeating-linear-gradient(135deg, transparent 0, transparent 6.855px, #92cdff 6.855px, #92cdff 13.71px, transparent 13.71px, transparent 20.565px, #fe9e90 20.565px, #fe9e90 27.42px);
   border-radius: 15px;
 }
@@ -1265,7 +1281,8 @@ img {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
 }
 
 .product__inner {
@@ -1645,7 +1662,8 @@ img {
   top: 50%;
   left: 0;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
   background-color: #ababab;
@@ -1765,7 +1783,8 @@ cursor: pointer;
 
 .pagination__nav--previous {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
   margin-right: 7px;
 }
 
@@ -1798,7 +1817,8 @@ cursor: pointer;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   max-width: inherit;
 }
 
@@ -2111,7 +2131,8 @@ cursor: pointer;
   min-height: 442px;
   padding: 17px 25px 27px 24px;
   -webkit-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+          -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
   height: auto;
   color: #323232;
   background-color: #f8f7f4;
