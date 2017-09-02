@@ -1003,6 +1003,7 @@ img {
 
 .promo-block__link {
   margin-top: auto;
+  max-width: 200px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
