@@ -145,7 +145,7 @@
      }, {
        searchControlProvider: 'yandex#search'
      }),
-     Placemark = new ymaps.Placemark([59.938631, 30.323055], {
+     Placemark = new ymaps.Placemark([59.938706, 30.323149], {
        balloonContent: 'Санкт-Петербург, Большая Конюшенная улица, 19/8'
      }, {
        // Опции.
