@@ -1,11 +1,61 @@
 (function () {
-  var feedbackLink = document.querySelector(".map__feedback-btn");
-  var feedbackPopup = document.querySelector("#feedback-popup");
-  var pageOverlay = document.querySelector(".page-overlay");
-  var searchLink = document.querySelector(".user-search-link");
-  var enterLink = document.querySelector(".user-enter-link");
-  var basketLink = document.querySelector(".user-basket-link--products");
-  var mapСontent = document.querySelector("#map");
+  const feedbackLink = document.querySelector(".map__feedback-btn");
+  const feedbackPopup = document.querySelector("#feedback-popup");
+  const searchLink = document.querySelector(".user-search-link");
+  const enterLink = document.querySelector(".user-enter-link");
+  const basketLink = document.querySelector(".user-basket-link_products");
+  const mapСontent = document.querySelector("#map");
+
+  const page = document.querySelector(".page_index");
+  const pageIndex = document.querySelector(".page_index");
+  const showcase = document.querySelector(".showcase");
+  const showcaseSlides = Array.from(document.querySelectorAll(".showcase__slide"));
+  const showcaseControls = Array.from(document.querySelectorAll(".showcase__controls .slider__control"));
+  const controlActiveClass = 'slider__control_active';
+  const slideActiveClass = 'showcase__slide_active';
+
+  var pageOverlay = document.createElement('div');
+  pageOverlay.classList.add('page-overlay', 'page-overlay_hide');
+  page.prepend(pageOverlay);
+
+  if (pageIndex && showcaseSlides.length > 0) {
+    showSliderBackgound(pageIndex, showcaseSlides[0]);
+    showcaseSlides[0].classList.add(slideActiveClass);
+  }
+
+  function showSliderBackgound (pageElem, slideElem) {
+    var image = slideElem.dataset.image;
+    var backgroundColor = slideElem.dataset.background;
+
+    pageElem.style.backgroundImage = image;
+    pageElem.style.backgroundColor = backgroundColor || '';
+  };
+
+  function bindShowcaseEvents (container, controls, controlActiveClass, slides, slideActiveClass) {
+    controls.forEach(function (control, index) {
+      control.addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        var target = evt.target;
+
+        if (!target.classList.contains(controlActiveClass)) {
+          var currentIndex = index;
+          var currentSlide = slides[currentIndex];
+
+          container.querySelector(`.${controlActiveClass}`).classList.remove(controlActiveClass);
+          container.querySelector(`.${slideActiveClass}`).classList.remove(slideActiveClass);
+
+          target.classList.add(controlActiveClass);
+          currentSlide.classList.add(slideActiveClass);
+          showSliderBackgound(pageIndex, currentSlide);
+        }
+      })
+    });
+  };
+
+  if (showcaseControls.length > 0) {
+    bindShowcaseEvents(showcase, showcaseControls, controlActiveClass, showcaseSlides, slideActiveClass);
+  }
 
   if(feedbackPopup) {
     var feedbackClose = feedbackPopup.querySelector(".popup__close");
@@ -21,13 +71,13 @@
   if (basketLink) {
     basketLink.addEventListener("click", function(event) {
       event.preventDefault();
-      basketLink.classList.toggle("user-basket-link--opened");
+      basketLink.classList.toggle("user-basket-link_opened");
     });
 
     window.addEventListener("keydown", function(event) {
       if (event.keyCode === 27) {
-        if (basketLink.classList.contains("user-basket-link--opened")) {
-          basketLink.classList.remove("user-basket-link--opened");
+        if (basketLink.classList.contains("user-basket-link_opened")) {
+          basketLink.classList.remove("user-basket-link_opened");
         };
       };
     });
@@ -36,13 +86,13 @@
   if (searchLink) {
     searchLink.addEventListener("click", function(event) {
       event.preventDefault();
-      searchLink.classList.toggle("user-search-link--opened");
+      searchLink.classList.toggle("user-search-link_opened");
     });
 
     window.addEventListener("keydown", function(event) {
       if (event.keyCode === 27) {
-        if (searchLink.classList.contains("user-search-link--opened")) {
-          searchLink.classList.remove("user-search-link--opened");
+        if (searchLink.classList.contains("user-search-link_opened")) {
+          searchLink.classList.remove("user-search-link_opened");
         };
       };
     });
@@ -51,13 +101,13 @@
   if (enterLink) {
     enterLink.addEventListener("click", function(event) {
       event.preventDefault();
-      enterLink.classList.toggle("user-enter-link--opened");
+      enterLink.classList.toggle("user-enter-link_opened");
     });
 
     window.addEventListener("keydown", function(event) {
       if (event.keyCode === 27) {
-        if (enterLink.classList.contains("user-enter-link--opened")) {
-          enterLink.classList.remove("user-enter-link--opened");
+        if (enterLink.classList.contains("user-enter-link_opened")) {
+          enterLink.classList.remove("user-enter-link_opened");
         };
       };
     });
@@ -66,12 +116,12 @@
   if (feedbackLink && feedbackPopup) {
     feedbackLink.addEventListener("click", function(event) {
     event.preventDefault();
-    if (pageOverlay && pageOverlay.classList.contains("page-overlay--hide")) {
-       pageOverlay.classList.remove("page-overlay--hide");
-       pageOverlay.classList.add("page-overlay--show");
+    if (pageOverlay && pageOverlay.classList.contains("page-overlay_hide")) {
+       pageOverlay.classList.remove("page-overlay_hide");
+       pageOverlay.classList.add("page-overlay_show");
     };
-    feedbackPopup.classList.remove("popup--closed");
-    feedbackPopup.classList.add("popup--opened");
+    feedbackPopup.classList.remove("popup_closed");
+    feedbackPopup.classList.add("popup_opened");
     clientName.focus();
 
     if (storageName && !storageEmail) {
@@ -95,41 +145,41 @@
 
   feedbackClose.addEventListener("click", function(event) {
     event.preventDefault();
-    feedbackPopup.classList.remove("popup--opened");
-    feedbackPopup.classList.add("popup--closed");
-    feedbackPopup.classList.remove("popup--error");
+    feedbackPopup.classList.remove("popup_opened");
+    feedbackPopup.classList.add("popup_closed");
+    feedbackPopup.classList.remove("popup_error");
 
-    if (pageOverlay && pageOverlay.classList.contains("page-overlay--show")) {
-      pageOverlay.classList.remove("page-overlay--show");
-      pageOverlay.classList.add("page-overlay--hide");
+    if (pageOverlay && pageOverlay.classList.contains("page-overlay_show")) {
+      pageOverlay.classList.remove("page-overlay_show");
+      pageOverlay.classList.add("page-overlay_hide");
     };
   });
 
   if (pageOverlay) {
     pageOverlay.addEventListener("click", function(event) {
       event.preventDefault();
-      if (feedbackPopup.classList.contains("popup--opened")) {
-        feedbackPopup.classList.remove("popup--opened");
-        feedbackPopup.classList.add("popup--closed");
-        feedbackPopup.classList.remove("popup--error");
+      if (feedbackPopup.classList.contains("popup_opened")) {
+        feedbackPopup.classList.remove("popup_opened");
+        feedbackPopup.classList.add("popup_closed");
+        feedbackPopup.classList.remove("popup_error");
       };
-      if (pageOverlay.classList.contains("page-overlay--show")) {
-        pageOverlay.classList.remove("page-overlay--show");
-        pageOverlay.classList.add("page-overlay--hide");
+      if (pageOverlay.classList.contains("page-overlay_show")) {
+        pageOverlay.classList.remove("page-overlay_show");
+        pageOverlay.classList.add("page-overlay_hide");
       };
     });
   };
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
-      if (feedbackPopup.classList.contains("popup--opened")) {
-        feedbackPopup.classList.remove("popup--opened");
-        feedbackPopup.classList.add("popup--closed");
-        feedbackPopup.classList.remove("popup--error");
+      if (feedbackPopup.classList.contains("popup_opened")) {
+        feedbackPopup.classList.remove("popup_opened");
+        feedbackPopup.classList.add("popup_closed");
+        feedbackPopup.classList.remove("popup_error");
       };
-      if (pageOverlay.classList.contains("page-overlay--show")) {
-        pageOverlay.classList.remove("page-overlay--show");
-        pageOverlay.classList.add("page-overlay--hide");
+      if (pageOverlay.classList.contains("page-overlay_show")) {
+        pageOverlay.classList.remove("page-overlay_show");
+        pageOverlay.classList.add("page-overlay_hide");
       };
     };
   });
